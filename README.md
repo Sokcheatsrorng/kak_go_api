@@ -1,51 +1,38 @@
-## Note
+# 📚 Author Book API
 
-### Install go.mod file nd go.sum 
+## 🚀 Project Setup
 
-```bash 
+### 🛠 Install Dependencies
 
-   go mod init
-
-   go mod tidy 
-
-```
-### Local Port 8080 
-----------------------------------------
-
-### Run local api with cmd/author_book_api/main.go
+To set up the project and ensure all dependencies are installed, run the following commands:
 
 ```bash
-
-    go run main.go
- 
+go mod init
+go mod tidy
 ```
-### Model Author and Book 
-
-### Endpoints Accessment with each models 
-
-# Author
+🔧 Running the Application Locally
+By default, the application runs on port 8080. To start the local API server, execute the following command from the cmd/author_book_api directory:
+```bash
+go run main.go
 ```
-GET   : http://localhost/authors
-GET   : http://localhost/authors/{id}
-POST  : http://localhost/authors
-PUT   : http://localhost/authors/{id}
-DELETE: http://localhost/authors/{id}
+## 🌐 API Endpoints
 
-```
-# Book
-```
-GET   : http://localhost/books
-GET   : http://localhost/books/{id}
-POST  : http://localhost/books
-PUT   : http://localhost/books/{id}
-DELETE: http://localhost/books/{id}
+### 👨‍💼 Author Endpoints
+- **GET** `/authors` - Retrieve a list of all authors
+- **GET** `/authors/{id}` - Retrieve a specific author by ID
+- **POST** `/authors` - Create a new author
+- **PUT** `/authors/{id}` - Update an existing author by ID
+- **DELETE** `/authors/{id}` - Delete an author by ID
 
-```
-### Using Reception with 
-- gorm library  <a>https://gorm.io/index.html</a>
-- gin package installation <a>https://github.com/gin-gonic/gin.git</a>
-- gorm with auto migration <a>https://gorm.io/docs/migration.html</a>
+### 📖 Book Endpoints
+- **GET** `/books` - Retrieve a list of all books
+- **GET** `/books/{id}` - Retrieve a specific book by ID
+- **POST** `/books` - Create a new book
+- **PUT** `/books/{id}` - Update an existing book by ID
+- **DELETE** `/books/{id}` - Delete a book by ID
 
-### Thanks 
-
+## 🛠 Tools & Libraries Used
+- 🔗 **GORM**: Object Relational Mapping (ORM) library for Go. For more information, visit the [GORM documentation](https://gorm.io/index.html).
+- 🔥 **Gin**: HTTP web framework written in Go. Installation instructions can be found in the [Gin repository](https://github.com/gin-gonic/gin.git).
+- ⚙️ **Auto Migration**: GORM's automatic schema migration tool. Refer to the [Auto Migration documentation](https://gorm.io/docs/migration.html) for further details.
 
