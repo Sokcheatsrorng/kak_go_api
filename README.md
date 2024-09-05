@@ -17,6 +17,8 @@ go run main.go
 ```
 ## 🌐 API Endpoints
 
+All endpoints are accessible via `http://localhost:8080`.
+
 ### 👨‍💼 Author Endpoints
 - **GET** `/authors` - Retrieve a list of all authors
 - **GET** `/authors/{id}` - Retrieve a specific author by ID
